@@ -1,0 +1,16 @@
+services:
+
+    nekstati.purgify.subscriber:
+        class: nekstati\purgify\event\subscriber
+        arguments:
+            - '@auth'
+            - '@cache'
+            - '@config'
+            - '@dbal.conn'
+            - '@service_container'
+            - '@request'
+            - '@template'
+            - '@user'
+            - '%core.root_path%'
+        tags:
+            - { name: event.listener }

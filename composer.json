@@ -1,0 +1,27 @@
+{
+	"name": "nekstati/purgify",
+	"type": "phpbb-extension",
+	"description": "Purge phpBB cache with one click from any page.",
+	"homepage": "",
+    "keywords": ["cache", "purge", "clear", "refresh"],
+	"version": "1.0.0",
+	"time": "2021-09-30",
+	"license": "GPL-2.0",
+	"authors": [
+        {
+            "name": "Nekstati",
+            "email": "",
+            "homepage": "http://phpbbguru.net",
+            "role": "Developer"
+        }
+	],
+	"require": {
+		"php": ">=7.1"
+	},
+	"extra": {
+		"display-name": "💡 Purge cache from any page",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.3.0"
+		}
+	}
+}
